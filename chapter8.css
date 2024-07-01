@@ -1,0 +1,181 @@
+body{
+    background-image: url("chapter8A.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    margin: 0; /* add this to remove default margin */
+    padding: 0; /* add this to remove default padding */
+    height: 130vh; /* add this to set the height to full viewport height */
+    width: 90vw;
+}
+.rel{
+    text-align: center;
+}
+.begin{
+    position: absolute; /* overrides relative from the first rule */
+    left: 90%;
+    top: 30%;
+    font-size: 1em; /* overrides 14px from the first rule */
+    width: 60%;
+    /* inherits the following properties from the first rule: */
+    display: inline-block;
+    margin-top: -25%;
+    margin-left: -40%;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(-50%);
+}
+.begin1{
+    position: relative;
+    display: inline-block;
+    margin-top: 120%; /* adjust the top margin */
+    margin-left: 20%;
+    color: aliceblue;
+    font-size: 14px !important;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.begin2{
+    position: relative;
+    display: inline-block;
+    margin-top: 2%; /* adjust the top margin */
+    margin-left: 20%;
+    color: aliceblue;
+    font-size: 14px !important;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.result{
+    position: relative;
+    left: 20%;
+    background-color: rgba(255, 255, 255, 0.247);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 70%;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    margin-top: -2%; /* adjust the top margin */
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 5px;
+}
+.question{
+    position: absolute; /* or absolute, fixed, or sticky */
+    left: 43%;
+    top: 22%;
+    font-size: 1em;
+}
+/* .begin{
+    position: absolute; /* or absolute, fixed, or sticky 
+    left: 49%;
+    top: 30%;
+    font-size: 1em;
+    width: auto;
+} */
+@media (min-width: 768px) {
+    body{
+        background-size: 100%;
+        background-image: url("chapter8.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        width: 95vh;
+    }
+    .rel{
+        position: relative;
+        left: 75%;
+    }
+    .begin{
+        position: relative;
+        display: inline-block;
+        margin-top: -6%; /* adjust the top margin */
+        margin-left: -1%;
+        color: aliceblue;
+        font-size: 1.2em !important;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .begin1{
+        position: relative;
+        display: inline-block;
+        margin-top: 80%; /* adjust the top margin */
+        margin-left: 70%;
+        color: aliceblue;
+        font-size: 1.2em !important;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        width: 39%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .begin2{
+        position: relative;
+        display: inline-block;
+        margin-top: 6%; /* adjust the top margin */
+        margin-left: 70%;
+        color: aliceblue;
+        font-size: 1.2em !important;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        width: 39%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .result{
+        position: relative;
+        left: 75%;
+        background-color: rgba(255, 255, 255, 0.247);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 30%;
+    }
+    .btn{
+        position: relative;
+        display: inline-block;
+        margin-top: -2%; /* adjust the top margin */
+        margin-left: 90%;
+        transform: translate(-50%, 0);
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        width: 200px;
+        border-radius: 5px;
+        height: 10%;
+    }
+    .question{
+        position: absolute; /* or absolute, fixed, or sticky */
+        left: 43%;
+        top: 22%;
+        font-size: 1em;
+    }
+    .begin{
+        position: absolute; /* or absolute, fixed, or sticky */
+        left: 49%;
+        top: 30%;
+        font-size: 1em;
+        width: auto;
+    }
+}

@@ -1,0 +1,90 @@
+body{
+    background: rgb(175,0,255);
+    background: linear-gradient(90deg, rgba(175,0,255,1) 0%, rgba(0,172,255,1) 20%, rgba(0,255,252,1) 40%, rgba(0,255,196,1) 50%, rgba(172,255,0,1) 60%, rgba(224,217,69,1) 80%, rgba(238,148,0,1) 100%);
+    color: white;
+}
+.intro{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 250px;
+}
+#pname{
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: black 2px solid;
+    margin-left: 500px;
+    height: 2em;
+    width: 20em;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+}
+.form{
+    margin: 17% 25%;
+}
+.input{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+    outline: none;
+}
+.input:focus {
+    background-color: transparent;
+    border-bottom: 1px solid #000000;
+}
+#btn{
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#btn:hover::before {
+    transform: scaleX(1);
+}
+#btn-content {
+    position: relative;
+    z-index: 1;
+}
+#btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+        82.3deg,
+        rgba(150, 93, 233, 1) 10.8%,
+        rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+}
+@media (max-width: 768px) {
+    input{
+        width: 5em;
+    }
+    #btn{
+        width: auto;
+    }
+}
+
